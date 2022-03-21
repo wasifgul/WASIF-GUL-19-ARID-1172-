@@ -2,6 +2,7 @@ package com.example.assginment0219_arid_1172;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.graphics.Color;
 
@@ -14,10 +15,11 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     int ch = 1;
     int font = 30;
+    Typeface w;
 
 
     @Override
-    
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -41,6 +43,20 @@ public class MainActivity extends AppCompatActivity {
                 if (font == 4) font = 2;
             }
         });
+        final TextView WASIFs = (TextView) findViewById(R.id.textView);
+        Button b4 = (Button) findViewById(R.id.style);
+        b4.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+            Typeface w = Typeface.createFromAsset(getAssets(), "BRUSHSCI.TTF");
+            WASIFs.setTypeface(w);
+
+
+
+            }
+        });
+
         Button b2 = (Button) findViewById(R.id.color);
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
