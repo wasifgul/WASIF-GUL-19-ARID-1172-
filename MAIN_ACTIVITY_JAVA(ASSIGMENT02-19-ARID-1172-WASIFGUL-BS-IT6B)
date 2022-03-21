@@ -1,0 +1,80 @@
+package com.example.assginment0219_arid_1172;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.graphics.Color;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+
+
+public class MainActivity extends AppCompatActivity {
+    int ch = 1;
+    int font = 30;
+
+
+    @Override
+    
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        final TextView WASIF = (TextView) findViewById(R.id.textView);
+        Button b1 = (Button) findViewById(R.id.fsize);
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                WASIF.setTextSize(font);
+                font = font +5;
+                if (font == 50) font = 30;
+            }
+        });
+        final TextView WASIFm = (TextView) findViewById(R.id.textView);
+        Button b3 = (Button) findViewById(R.id.fsizem);
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                WASIFm.setTextSize(font);
+                font = font - 2;
+                if (font == 4) font = 2;
+            }
+        });
+        Button b2 = (Button) findViewById(R.id.color);
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                switch (ch) {
+
+                    case 1:
+                        WASIF.setTextColor(Color.RED);
+                        break;
+                    case 2:
+                        WASIF.setTextColor(Color.GREEN);
+                        break;
+                    case 3:
+                        WASIF.setTextColor(Color.BLUE);
+                        break;
+                    case 4:
+                        WASIF.setTextColor(Color.CYAN);
+                        break;
+                    case 5:
+                        WASIF.setTextColor(Color.YELLOW);
+                        break;
+                    case 6:
+                        WASIF.setTextColor(Color.MAGENTA);
+                        break;
+
+
+                }
+                ch++;
+                if (ch == 7)
+                    ch = 1;
+
+            }
+        });
+    }
+}
+
