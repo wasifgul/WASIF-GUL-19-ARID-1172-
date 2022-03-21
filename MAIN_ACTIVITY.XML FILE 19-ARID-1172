@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+   android:background="@color/accent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="344dp"
+        android:layout_height="74dp"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:text="Hello World(19-ARID-1172)!"
+        android:textColor="@color/purple_500"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <Button
+        android:id="@+id/fsizem"
+
+        android:layout_width="276dp"
+        android:layout_height="76dp"
+        android:backgroundTint="#8E7F56"
+        android:text="CHANGE FONT SIZE(-)"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.557" />
+
+    <Button
+        android:id="@+id/color"
+        android:layout_width="276dp"
+        android:layout_height="76dp"
+        android:backgroundTint="#009688"
+        android:text="CHANGE COLOR "
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.347" />
+    <Button
+        android:id="@+id/fsize"
+
+        android:layout_width="276dp"
+        android:layout_height="76dp"
+        android:backgroundTint="#B64840"
+        android:text="CHANGE FONT SIZE(+)"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.138" />
+
+    <Button
+        android:id="@+id/style"
+        android:layout_width="276dp"
+        android:layout_height="76dp"
+        android:backgroundTint="#2C3855"
+        android:text="CHANGE STYLE"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.755" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
